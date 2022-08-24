@@ -1,0 +1,26 @@
+.Product_Details{
+    &_Content{
+        @apply grid grid-cols-1 md:grid-cols-2 py-20;
+
+        img{
+            @apply h-[300px] md:h-[500px] w-full object-contain mb-4 md:mb-0;
+        } 
+        &_Right{
+            &_title{
+                @apply font-bold text-2xl mb-6;
+            }
+            &_price{
+                @apply  md:flex justify-between mt-6 ;
+                &_qty{
+                    @apply w-[120px]  border border-gray-800 flex justify-between items-center mr-8;
+                    span{
+                        @apply font-bold text-xl cursor-pointer w-full h-full flex items-center justify-center;
+                    }
+                }
+                &_btn{
+                    @apply py-2 px-4 bg-gray-800 text-white border border-gray-800 hover:bg-white hover:text-gray-800 transition-all font-bold
+                }
+            }
+        }
+    }
+}

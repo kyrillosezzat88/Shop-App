@@ -1,0 +1,19 @@
+.Navbar{
+    @apply py-6 bg-gray-800 text-white ;
+    
+    &_content{
+        @apply flex justify-between items-center flex-wrap;
+        &_Links{
+            @apply flex items-center;
+        }
+        &_cart{
+            @apply relative ml-3 cursor-pointer;
+            img{
+                @apply w-[30px] h-[30px] text-teal-50;
+            }
+            &_count{
+                @apply w-[20px] h-[20px] text-[12px] bg-red-600 rounded-full text-white  font-bold  flex justify-center items-center absolute top-0 -right-3
+            }
+        }
+    }
+}

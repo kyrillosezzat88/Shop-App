@@ -1,0 +1,21 @@
+.Product{
+    @apply bg-white rounded-lg shadow-md p-4;
+    img{
+        @apply w-full h-[300px] object-contain ;
+    }
+    &_content{
+        @apply p-3;
+        &_title{
+            @apply font-bold text-[22px] mb-3;
+        }
+        &_description{
+            @apply mb-2;
+        }
+        &_btn{
+            @apply border border-gray-500  px-4 py-1  outline-none mt-2 hover:bg-gray-400 hover:text-white hover:border-gray-400 transition-all 
+        }
+        &_price{
+            @apply font-bold text-[22px]
+        }
+    }
+}

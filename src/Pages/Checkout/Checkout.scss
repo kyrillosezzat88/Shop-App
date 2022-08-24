@@ -1,0 +1,17 @@
+.checkout{
+    &_content{
+        @apply flex justify-center items-center min-h-[calc(100vh-82px)] flex-wrap;
+        &_form{
+            @apply flex flex-col;
+        }
+        &_field{
+            @apply border border-gray-300 w-[300px] md:w-[500px] p-2 my-3;
+        }
+        &_error{
+            @apply text-red-500;
+        }
+        button{
+            @apply bg-gray-800 text-white py-3 font-bold mt-8 border border-gray-800 hover:bg-white hover:text-black transition-all
+        }
+    }
+}
